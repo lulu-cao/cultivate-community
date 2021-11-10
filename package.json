@@ -1,3 +1,9 @@
+{"homepage": 
+    {"http://yuribenjamin.github.io/my-app"
+}
+};
+
+
 {"scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
