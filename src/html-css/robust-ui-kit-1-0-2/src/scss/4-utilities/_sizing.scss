@@ -1,0 +1,17 @@
+@each $prop, $abbrev in (width: vw, height: vh) {
+  @each $size, $length in $viewport-sizes {
+    .#{$abbrev}-#{$size} { #{$prop}: #{$length}#{$abbrev} !important; }
+  }
+}
+
+@each $prop, $abbrev in (min-width: w, min-height: h) {
+  @each $size, $length in $sizes {
+    .min#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}
+
+@each $prop, $abbrev in (max-width: w, max-height: h) {
+  @each $size, $length in $sizes {
+    .max#{$abbrev}-#{$size} { #{$prop}: $length !important; }
+  }
+}

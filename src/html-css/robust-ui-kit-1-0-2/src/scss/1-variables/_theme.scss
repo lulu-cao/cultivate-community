@@ -1,0 +1,36 @@
+// Lineheight
+$line-height: ();
+$line-height: map-merge((
+  0: 1.5,
+  1: 2
+), $line-height);
+
+// Text
+$font-sizes: ();
+$font-sizes: map-merge((
+  xs: 50%,
+  sm: 75%,
+  md: 100%,
+  lg: 125%,
+  xl: 150%
+), $font-sizes);
+
+// Shadows
+$shadows: ();
+$shadows: map-merge((
+  sm: .35rem,
+  md: .5rem,
+  lg: .65rem
+), $shadows);
+
+// Viewport sizing
+$viewport-sizes: ();
+$viewport-sizes: map-merge(
+  (
+    25: 25,
+    50: 50,
+    75: 75,
+    100: 100
+  ),
+  $viewport-sizes
+);

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cultivate Community</title>
+
+  <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-lg navbar-expand-lg navbar-dark bg-teal">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="_images/logo-white.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button class="btn btn-outline-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My account
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="#">Care Contacts</a>
+            <a class="dropdown-item" href="#">Resources</a>           
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Settings & Privacy</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="intro py-4 bg-teal text-white">
+    <div class="intro-content">
+      <div class="container">
+        <h1>My account</h1>
+        <p class="lead mb-4">Resources</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="main" role="main">
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="nav flex-column nav-pills">
+              <a class="nav-link active" data-toggle="pill" href="#account">Account</a>
+              <a class="nav-link" data-toggle="pill" href="#password">Password</a>
+              <a class="nav-link" data-toggle="pill" href="#">Privacy and safety</a>
+              <a class="nav-link" data-toggle="pill" href="#">Email notifications</a>
+              <a class="nav-link" data-toggle="pill" href="#">Delete account</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="account" role="tabpanel">
+
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Public info</h5>
+
+                    <form>
+                      <div class="row">
+                        <div class="col-md-8">
+                          <div class="form-group mt-2">
+                            <label for="inputUsername">Username</label>
+                            <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputUsername">Bio</label>
+                            <textarea rows="2" class="form-control" id="inputBio" placeholder="Tell something about yourself"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="text-center">
+                            <img alt="Image" src="_images/icon.png" rounded-circle img-responsive mt-2" width="128" height="128" />
+                            <div class="mt-2">
+                              <span class="btn btn-secondary"><i class="fas fa-upload"></i> Upload</span>
+                            </div>
+                            <small>Upload a photo here</small>
+                          </div>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn btn-info">Save changes</button>
+                    </form>
+
+                  </div>
+                </div><!-- /.card -->
+
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Private info</h5>
+
+                    <form>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputFirstName">First name</label>
+                          <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputLastName">Last name</label>
+                          <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputCity">City</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputState">State</label>
+                          <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputZip">Zip</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-info">Save changes</button>
+                    </form>
+
+                  </div>
+                </div><!-- /.card -->
+
+              </div>
+              <div class="tab-pane fade" id="password" role="tabpanel">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Password</h5>
+
+                    <form>
+                      <div class="form-group">
+                        <label for="inputPasswordCurrent">Current password</label>
+                        <input type="password" class="form-control" id="inputPasswordCurrent">
+                        <small><a href="#">Forgot your password?</a></small>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPasswordNew">New password</label>
+                        <input type="password" class="form-control" id="inputPasswordNew">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPasswordNew2">Verify password</label>
+                        <input type="password" class="form-control" id="inputPasswordNew2">
+                      </div>
+                      <button type="submit" class="btn btn-info">Save changes</button>
+                    </form>
+
+                  </div>
+                </div><!-- /.card -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="py-3 lh-1 bg-white text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <small class="text-muted">&copy; 2021 - <a href="#">Cultivate Community</a>.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

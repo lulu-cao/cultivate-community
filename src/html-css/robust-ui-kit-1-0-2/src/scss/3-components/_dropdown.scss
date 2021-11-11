@@ -1,0 +1,26 @@
+.dropdown .dropdown-menu.show {
+  animation-name: dropdownAnimation;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.dropdown-toggle:after {
+  border: solid;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transform: rotate(45deg);
+}

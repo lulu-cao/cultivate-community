@@ -1,0 +1,13 @@
+@each $size, $value in $shadows {
+  // Default shadow (.shadow or .shadow-md)
+  @if $size == "md" {
+    .shadow {
+      @include shadow-variant($value);
+    }
+  }
+
+  // Shadow sizes
+  .shadow-#{$size} {
+    @include shadow-variant($value);
+  }
+}

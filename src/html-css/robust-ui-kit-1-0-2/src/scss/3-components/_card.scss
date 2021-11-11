@@ -1,0 +1,12 @@
+.equal-height-cards > div > div.card {
+  height: calc(100%);
+}
+
+.card-body.card-body-scroll {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.card.row > [class*="col"]:not(.card-body):nth-child(2):last-child {
+    border-left: 1px solid $gray-300;
+}

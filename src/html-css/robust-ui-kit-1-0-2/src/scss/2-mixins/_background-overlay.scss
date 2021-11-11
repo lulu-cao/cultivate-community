@@ -1,0 +1,14 @@
+@mixin bg-overlay($parent, $color, $opacity: 0.85) {
+  #{$parent}:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba($color, $opacity);
+    z-index: 2
+  }
+}

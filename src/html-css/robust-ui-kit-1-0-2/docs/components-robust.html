@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Robust UI Kit</title>
+
+  <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="top" class="navbar navbar-lg navbar-expand-lg navbar-dark bg-info">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Robust.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Overview</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="pages-landing.html">Landing</a>
+              <a class="dropdown-item" href="pages-dashboard.html">Dashboard</a>
+              <a class="dropdown-item" href="pages-general.html">General</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Components
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="components-bootstrap.html">Bootstrap</a>
+              <a class="dropdown-item" href="components-robust.html">Robust</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Docs
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="getting-started.html">Introduction</a>
+              <a class="dropdown-item" href="getting-started.html#quick-start">Quick start</a>
+              <a class="dropdown-item" href="getting-started.html#build-tools">Build tools</a>
+              <a class="dropdown-item" href="getting-started.html#contents">Contents</a>
+              <a class="dropdown-item" href="getting-started.html#changelog">Changelog</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn btn-outline-white" href="https://themes.getbootstrap.com/product/robust-ui-kit-dashboard-landing/" target="_blank">Purchase Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="intro py-5 bg-info text-white">
+    <div class="intro-content">
+      <div class="container">
+        <h1>Robust Components</h1>
+        <p class="lead mb-4">Custom components &amp; utilities.</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="main" role="main">
+    <div class="py-5 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+
+            <div id="flickity">
+              <h2>Flickity</h2>
+              <p class="lead">Touch, responsive, flickable carousels.</p>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Default</h5>
+
+                  <div data-flickity='{ "imagesLoaded": true }'>
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/3.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Bordered cells</h5>
+
+                  <div data-flickity='{ "prevNextButtons": false, "wrapAround": true, "imagesLoaded": true }' class="flickity-bordered-cells">
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/2.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/3.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-cell">
+                      <img class="img-fluid" src="img/photos/1.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                <a href="https://flickity.metafizzy.co/options.html" target="_blank">See all options <i class="fa fa-external-link-alt"></i></a>
+              </p>
+              <hr class="my-5" />
+            </div><!-- /#flickity -->
+
+            <div id="shadows">
+              <h2>Shadows</h2>
+              <p class="lead">Robust's shadows provide a flexible way to add shadow to a content container or image.</p>
+
+              <p>The following sizes are available: <code>.shadow-sm</code>, <code>.shadow-md</code> and <code>.shadow-lg</code></p>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Default</h5>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img class="img-fluid shadow-sm" src="img/photos/3.jpg" alt="">
+                    </div>
+                    <div class="col-md-4">
+                      <img class="img-fluid shadow-md" src="img/photos/2.jpg" alt="">
+                    </div>
+                    <div class="col-md-4">
+                      <img class="img-fluid shadow-lg" src="img/photos/1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Anchor</h5>
+
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="#" class="link-unstyled">
+                        <img class="img-fluid shadow-sm" src="img/photos/3.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#" class="link-unstyled">
+                        <img class="img-fluid shadow-md" src="img/photos/2.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="#" class="link-unstyled">
+                        <img class="img-fluid shadow-lg" src="img/photos/1.jpg" alt="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-5" />
+            </div><!-- /#shadows -->
+
+            <div id="font-awesome">
+              <h2>Font Awesome</h2>
+              <p class="lead">Get vector icons and social logos on your website with Font Awesome, the web’s most popular icon set and toolkit.</p>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Solid</h5>
+
+                  <i class="mx-2 fa fa-2x fa-comments"></i>
+                  <i class="mx-2 fa fa-2x fa-bell"></i>
+                  <i class="mx-2 fa fa-2x fa-smile"></i>
+                  <i class="mx-2 fa fa-2x fa-heart"></i>
+                  <i class="mx-2 fa fa-2x fa-edit"></i>
+                  <i class="mx-2 fa fa-2x fa-envelope"></i>
+                  <i class="mx-2 fa fa-2x fa-hand-peace"></i>
+                  <i class="mx-2 fa fa-2x fa-trash-alt"></i>
+                  <i class="mx-2 fa fa-2x fa-star"></i>
+                  <i class="mx-2 fa fa-2x fa-save"></i>
+                  <i class="mx-2 fa fa-2x fa-lightbulb"></i>
+                  <i class="mx-2 fa fa-2x fa-thumbs-up"></i>
+                  <i class="mx-2 fa fa-2x fa-user"></i>
+                  <i class="mx-2 fa fa-2x fa-folder-open"></i>
+                  <i class="mx-2 fa fa-2x fa-paper-plane"></i>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Regular</h5>
+
+                  <i class="mx-2 far fa-2x fa-comments"></i>
+                  <i class="mx-2 far fa-2x fa-bell"></i>
+                  <i class="mx-2 far fa-2x fa-smile"></i>
+                  <i class="mx-2 far fa-2x fa-heart"></i>
+                  <i class="mx-2 far fa-2x fa-edit"></i>
+                  <i class="mx-2 far fa-2x fa-envelope"></i>
+                  <i class="mx-2 far fa-2x fa-hand-peace"></i>
+                  <i class="mx-2 far fa-2x fa-trash-alt"></i>
+                  <i class="mx-2 far fa-2x fa-star"></i>
+                  <i class="mx-2 far fa-2x fa-save"></i>
+                  <i class="mx-2 far fa-2x fa-lightbulb"></i>
+                  <i class="mx-2 far fa-2x fa-thumbs-up"></i>
+                  <i class="mx-2 far fa-2x fa-user"></i>
+                  <i class="mx-2 far fa-2x fa-folder-open"></i>
+                  <i class="mx-2 far fa-2x fa-paper-plane"></i>
+                </div>
+              </div>
+
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">Brands</h5>
+
+                  <i class="mx-2 fab fa-2x fa-amazon"></i>
+                  <i class="mx-2 fab fa-2x fa-apple"></i>
+                  <i class="mx-2 fab fa-2x fa-google"></i>
+                  <i class="mx-2 fab fa-2x fa-facebook"></i>
+                  <i class="mx-2 fab fa-2x fa-twitter"></i>
+                  <i class="mx-2 fab fa-2x fa-dropbox"></i>
+                  <i class="mx-2 fab fa-2x fa-github"></i>
+                  <i class="mx-2 fab fa-2x fa-microsoft"></i>
+                  <i class="mx-2 fab fa-2x fa-paypal"></i>
+                  <i class="mx-2 fab fa-2x fa-snapchat"></i>
+                  <i class="mx-2 fab fa-2x fa-stripe"></i>
+                  <i class="mx-2 fab fa-2x fa-tumblr"></i>
+                  <i class="mx-2 fab fa-2x fa-slack"></i>
+                  <i class="mx-2 fab fa-2x fa-imdb"></i>
+                  <i class="mx-2 fab fa-2x fa-spotify"></i>
+                  <i class="mx-2 fab fa-2x fa-hacker-news"></i>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                <a href="https://fontawesome.com/icons" target="_blank">See all available icons <i class="fa fa-external-link-alt"></i></a>
+              </p>
+              <hr class="my-5" />
+            </div><!-- /#font-awesome -->
+
+            <div id="timeago">
+              <h2>Timeago.js</h2>
+              <p class="lead">Simple library (less than 2 kb) that is used to format datetimes.</p>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Set relative date <small>JavaScript</small></h5>
+                  <pre class="snippet"><code class="javascript">var timeagoInstance = timeago('2016-06-10 12:12:12'); // set the relative date here.
+timeagoInstance.format('2016-06-12', 'zh_CN');</code></pre>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Use timestamp <small>JavaScript</small></h5>
+                  <pre class="snippet"><code class="javascript">timeago().format(Date.now() - 11 * 1000 * 60 * 60); // returns '11 hours ago'</code></pre>
+                </div>
+              </div>
+
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Automatic rendering <small>HTML</small></h5>
+                  <pre class="snippet"><code class="html">&#x3C;time class=&#x22;timeago&#x22; datetime=&#x22;2016-06-30 09:20:00&#x22;&#x3E;&#x3C;/time&#x3E;</code></pre>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                <a href="http://timeago.org/" target="_blank">See full documentation <i class="fa fa-external-link-alt"></i></a>
+              </p>
+              <hr class="my-5" />
+            </div><!-- /#timaago -->
+
+            <div id="medium-zoom">
+              <h2>Medium-Zoom</h2>
+              <p class="lead">A simple plugin for image zooming, as seen on Medium.</p>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Examples</h5>
+
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="img/gallery/4.jpg" class="img-fluid mb-3" alt="" data-action="zoom" />
+                      <img src="img/gallery/2.jpg" class="img-fluid mt-3" alt="" data-action="zoom" />
+                    </div>
+                    <div class="col-4">
+                      <img src="img/gallery/5.jpg" class="img-fluid mb-3" alt="" data-action="zoom" />
+                      <img src="img/gallery/3.jpg" class="img-fluid mt-3" alt="" data-action="zoom" />
+                    </div>
+                    <div class="col-4">
+                      <img src="img/gallery/6.jpg" class="img-fluid mb-3" alt="" data-action="zoom" />
+                      <img src="img/gallery/7.jpg" class="img-fluid mt-3" alt="" data-action="zoom" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mt-3">
+                <a href="https://github.com/francoischalifour/medium-zoom" target="_blank">See full documentation <i class="fa fa-external-link-alt"></i></a>
+              </p>
+              <hr class="my-5" />
+            </div><!-- /#medium-zoom -->
+
+            <div id="social-buttons">
+              <h2>Social Buttons</h2>
+              <p class="lead">Increase engagement on your social networks with Robust's native social buttons.</p>
+
+              <div class="mb-3">
+                <button class="btn mb-1 btn-facebook"><i class="mr-1 fab fa-facebook-f"></i> Facebook</button>
+                <button class="btn mb-1 btn-twitter"><i class="mr-1 fab fa-twitter"></i> Twitter</button>
+                <button class="btn mb-1 btn-google"><i class="mr-1 fab fa-google"></i> Google</button>
+                <button class="btn mb-1 btn-youtube"><i class="mr-1 fab fa-youtube"></i> Youtube</button>
+                <button class="btn mb-1 btn-vimeo"><i class="mr-1 fab fa-vimeo-v"></i> Vimeo</button>
+                <button class="btn mb-1 btn-dribbble"><i class="mr-1 fab fa-dribbble"></i> Dribbble</button>
+                <button class="btn mb-1 btn-github"><i class="mr-1 fab fa-github"></i> Github</button>
+                <button class="btn mb-1 btn-instagram"><i class="mr-1 fab fa-instagram"></i> Instagram</button>
+                <button class="btn mb-1 btn-pinterest"><i class="mr-1 fab fa-pinterest-p"></i> Pinterest</button>
+                <button class="btn mb-1 btn-flickr"><i class="mr-1 fab fa-flickr"></i> Flickr</button>
+                <button class="btn mb-1 btn-bitbucket"><i class="mr-1 fab fa-bitbucket"></i> Bitbucket</button>
+              </div>
+
+              <div>
+                <button class="btn mb-1 btn-facebook"><i class="fab my-1 fa-facebook-f"></i></button>
+                <button class="btn mb-1 btn-twitter"><i class="fab my-1 fa-twitter"></i></button>
+                <button class="btn mb-1 btn-google"><i class="fab my-1 fa-google"></i></button>
+                <button class="btn mb-1 btn-youtube"><i class="fab my-1 fa-youtube"></i></button>
+                <button class="btn mb-1 btn-vimeo"><i class="fab my-1 fa-vimeo-v"></i></button>
+                <button class="btn mb-1 btn-dribbble"><i class="fab my-1 fa-dribbble"></i></button>
+                <button class="btn mb-1 btn-github"><i class="fab my-1 fa-github"></i></button>
+                <button class="btn mb-1 btn-instagram"><i class="fab my-1 fa-instagram"></i></button>
+                <button class="btn mb-1 btn-pinterest"><i class="fab my-1 fa-pinterest-p"></i></button>
+                <button class="btn mb-1 btn-flickr"><i class="fab my-1 fa-flickr"></i></button>
+                <button class="btn mb-1 btn-bitbucket"><i class="fab my-1 fa-bitbucket"></i></button>
+              </div>
+
+              <div>
+                <button class="btn mb-1 btn-outline-facebook"><i class="fab my-1 fa-facebook-f"></i></button>
+                <button class="btn mb-1 btn-outline-twitter"><i class="fab my-1 fa-twitter"></i></button>
+                <button class="btn mb-1 btn-outline-google"><i class="fab my-1 fa-google"></i></button>
+                <button class="btn mb-1 btn-outline-youtube"><i class="fab my-1 fa-youtube"></i></button>
+                <button class="btn mb-1 btn-outline-vimeo"><i class="fab my-1 fa-vimeo-v"></i></button>
+                <button class="btn mb-1 btn-outline-dribbble"><i class="fab my-1 fa-dribbble"></i></button>
+                <button class="btn mb-1 btn-outline-github"><i class="fab my-1 fa-github"></i></button>
+                <button class="btn mb-1 btn-outline-instagram"><i class="fab my-1 fa-instagram"></i></button>
+                <button class="btn mb-1 btn-outline-pinterest"><i class="fab my-1 fa-pinterest-p"></i></button>
+                <button class="btn mb-1 btn-outline-flickr"><i class="fab my-1 fa-flickr"></i></button>
+                <button class="btn mb-1 btn-outline-bitbucket"><i class="fab my-1 fa-bitbucket"></i></button>
+              </div>
+
+              <hr class="my-5" />
+            </div><!-- /#social-buttons -->
+
+          </div>
+          <div class="col-md-3 col-xl-2 ml-auto">
+            <div class="nav nav-sticky nav-sidebar flex-row">
+              <a class="nav-link" href="#flickity">Flickity</a>
+              <a class="nav-link" href="#shadows">Shadows</a>
+              <a class="nav-link" href="#font-awesome">Font Awesome</a>
+              <a class="nav-link" href="#timeago">Timeago.js</a>
+              <a class="nav-link" href="#medium-zoom">Medium-Zoom</a>
+              <a class="nav-link" href="#social-buttons">Social Buttons</a>
+              <a class="nav-link text-muted text-sm mt-1" href="#top">Back to top</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="row">
+            <div class="col-md-4 ml-auto">
+              <h2>Integrates with all<br /> your favorite tools.</h2>
+            </div>
+            <div class="col-md-6 mr-auto">
+              <p class="lead text-dark">
+                Robust uses industry standard build tools and plugins such as Sass, jQuery, Webpack, Babel and npm. All source files and compiled files are included inside the package.
+              </p>
+            </div>
+          </div>
+          <div class="row align-items-center my-md-4">
+            <div class="col">
+              <img src="img/logos/sass.svg" class="img-fluid p-md-2" alt="Sass" />
+            </div>
+            <div class="col">
+              <img src="img/logos/bootstrap.svg" class="img-fluid p-md-4" alt="Bootstrap" />
+            </div>
+            <div class="col">
+              <img src="img/logos/jquery.svg" class="img-fluid" alt="jQuery" />
+            </div>
+            <div class="col">
+              <img src="img/logos/webpack.svg" class="img-fluid p-md-3" alt="Webpack" />
+            </div>
+            <div class="col">
+              <img src="img/logos/babel.svg" class="img-fluid" alt="Babel" />
+            </div>
+            <div class="col">
+              <img src="img/logos/npm.svg" class="img-fluid" alt="Npm" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer role="contentinfo" class="py-6 lh-1 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="h4 mb-4">Robust.</h3>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h4 class="h6">Address</h4>
+              <address>
+    						<ul class="list-unstyled">
+    							<li>
+                    City Hall<br>
+    								212  Street<br>
+    								Lawoma<br>
+    								735<br>
+    							</li>
+    						</ul>
+    					</address>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4 class="h6">Popular Services</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Payment Center</a></li>
+                <li><a href="#">Contact Directory</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">News and Updates</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4 class="h6">Website Information</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Website Tutorial</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Webmaster</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h4 class="h6">Company</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="https://themes.getbootstrap.com/product/robust-ui-kit-dashboard-landing/" target="_blank">Purchase</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center text-sm">
+          <p class="mb-0">&copy; 2021 - <a href="index.html">Robust UI Kit</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+  $(function(){
+    var hash = window.location.hash;
+    if(hash){
+      $('html, body').animate({ scrollTop: $(hash).offset().top });
+    }
+
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        var element = $(this).attr('href');
+        $('body, html').animate({scrollTop: $(element).offset().top});
+    });
+
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
+  });
+  </script>
+</body>
+</html>
