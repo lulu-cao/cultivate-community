@@ -59,8 +59,8 @@
           <div class="col-md-3">
             <div class="nav flex-column nav-pills">
               <a class="nav-link" data-toggle="pill" href="#profile">Profile</a>
-              <a class="nav-link" data-toggle="pill" href="#carecontact">Care Contacts</a>
-              <a class="nav-link" data-toggle="pill" href="#resources">Resources</a>
+              <a class="nav-link" data-toggle="pill" href="#addcarecontact">Add Care Contact</a>
+              <a class="nav-link" data-toggle="pill" href="#caredirectory">Care Directory</a>
               <a class="nav-link" data-toggle="pill" href="#password">Password</a>
             </div>
           </div>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="col-md-4">
                           <div class="text-center">
-                            <img alt="Image" src="_images/headshot-img.png"rounded-circle img-responsive mt-2" width="128" height="128" />
+                            <img alt="Image" src="_images/headshot-img.png" class="rounded-circle img-responsive mt-2" width="128" height="128" />
                             <div class="mt-2">
                               <span class="btn btn-secondary"><i class="fas fa-upload"></i> Upload</span>
                             </div>
@@ -153,44 +153,125 @@
 
               </div>
 
-              <div class="tab-pane fade" id="carecontact" role="tabpanel">
+              <div class="tab-pane fade" id="addcarecontact" role="tabpanel">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Care Contacts</h5>
+                    <h5 class="card-title">Add Care Contacts</h5>
 
                     <form>
                       <div class="form-group">
-                        <label for="inputCareContact1">Contact #1</label>
-                        <input type="text" class="form-control" id="inputCareContact1">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Name">
                       </div>
                       <div class="form-group">
-                        <label for="inputCareContact2">Contact #2</label>
-                        <input type="text" class="form-control" id="inputCareContact2">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
                       </div>
                       <div class="form-group">
-                        <label for="inputCareContact3">Contact #3</label>
-                        <input type="text" class="form-control" id="inputCareContact3">
+                        <label for="phone">Phone</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Phone">
                       </div>
-                      <button type="submit" class="btn btn-info">Save changes</button>
+      
+                      <div class="form-group">
+                        <label for="message">Note</label>
+                        <textarea class="form-control" id="message" placeholder="Message" rows="4"></textarea>
+                      </div>
+      
+                      <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="gdpr">
+                        <label class="form-check-label" for="gdpr">I consent to Cultivate Community collecting and storing data from this form</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-lg">Add</button>
                     </form>
 
                   </div>
                 </div><!-- /.card -->
               </div>
               
-              <div class="tab-pane fade" id="resources" role="tabpanel">
+              <div class="tab-pane fade" id="caredirectory" role="tabpanel">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Resources</h5>
+                    <h5 class="card-title">Care Directory</h5>
+                    <table class="table table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Relation</th>
+                          <th>Notified</th>
+                          <th>Status</th>
+                          <th class="text-right"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="bg-white">
+                          <td>
+                            <div class="media align-items-center">
+                              <i class="m-1 text-info"></i>
+                              <div class="media-body ml-2">
+                                <span class="h6 mb-0">First Last</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="align-middle">Family</td>
+                          <td class="align-middle">
+                            <time class="timeago" datetime="2021-04-26 20:00">26 april 2021</time>
+                          </td>
+                          <td class="align-middle">
+                            <span class="badge badge-success">Active</span>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary">Revoke access</a>
+                          </td>
+                        </tr>
+            
+                        <tr class="bg-white">
+                          <td>
+                            <div class="media align-items-center">
+                              <i class="m-1 text-info"></i>
+                              <div class="media-body ml-2">
+                                <span class="h6 mb-0">First Last</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="align-middle">Friend</td>
+                          <td class="align-middle">
+                            <time class="timeago" datetime="2021-03-14 20:00">14 march 2021</time>
+                          </td>
+                          <td class="align-middle">
+                            <span class="badge badge-success">Active</span>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary">Revoke access</a>
+                          </td>
+                        </tr>
 
-                    <form>
-                      <div class="form-group">
-                        <label for="inputCareContact1">Resource 1</label>
-                        <input type="text" class="form-control" id="inputCareContact1">
-                      </div>
-                      
-                      <button type="submit" class="btn btn-info">Suggest another resource</button>
-                    </form>
+                        <tr class="bg-white">
+                          <td>
+                            <div class="media align-items-center">
+                              <i class="m-1 text-info"></i>
+                              <div class="media-body ml-2">
+                                <span class="h6 mb-0">First Last</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="align-middle">Friend</td>
+                          <td class="align-middle">
+                            <time class="timeago" datetime="2021-03-09 20:00">9 march 2021</time>
+                          </td>
+                          <td class="align-middle">
+                            <span class="badge badge-danger">Inactive</span>
+                          </td>
+                          <td class="text-right">
+                            <a href="#" class="btn btn-outline-primary">Revoke access</a>
+                          </td>
+                        </tr>
+            
+                        <tr class="bg-light">
+                          <td colspan="5">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>                                
 
                   </div>
                 </div><!-- /.card -->
