@@ -1,7 +1,6 @@
 import React from 'react'; 
 import Nav from './Nav';
-//import '../html-css/css/app.css';
-//import '../html-css/css/resource.css'
+import '../html-css/css/app.css';
 
 function About(props) {
   return (
