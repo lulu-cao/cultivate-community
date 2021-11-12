@@ -1,6 +1,10 @@
 import Header from './Header';
 import Footer from './Footer'; 
+<<<<<<< HEAD
 import React from 'react'; 
+=======
+import React, { Component } from 'react'; 
+>>>>>>> bedb8e62b4c62059fb4353a6d14509538c0b8d36
 
 
 function Home() {
