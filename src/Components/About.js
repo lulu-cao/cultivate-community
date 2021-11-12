@@ -76,7 +76,7 @@ function About(props) {
                 <img src="./_images/alejandra.jpg" className="card-img-top custom-img" alt="Alejandra's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Alejandra P. Hernandez</h5>
-                  <p className="card-text">Front-end Web Developer</p>
+                  <p className="card-text">Content Manager</p>
                   <a href="https://github.com/alepehernandez" className="btn btn-primary">GitHub Profile</a>
                 </div>
               </div>
