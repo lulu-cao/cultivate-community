@@ -12,12 +12,14 @@ function About(props) {
       <div className="container">
         <h1>About This Project</h1>
         <p>
-          As mental Health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources. 
+          Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides a litany of local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
         </p>
         <p>
-          More features will be allowed for a registered user. A registered user can load "care contacts" (trusted individuals). If a user notices triggers for a mental health emergency, they can then use the app to drop their location to their care contacts as well as local community response teams. Registered users can also find local resources for drug/alcohol counseling assistance with a search class being "Partner/Spousal Support".
+          The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
         </p>
-        <p>This webpage is the result of a hackathon organized by <a href="https://girldevelopit.com/">Girl Develop It</a>. Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.</p>
+        <p>
+          This website is the result of a hackathon event organized by <a href="https://girldevelopit.com/">Girl Develop It</a>. Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.
+        </p>
         
         <br/>
         <h1>About Us</h1>
@@ -26,8 +28,8 @@ function About(props) {
         <div className="container">
           <div className="row">
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/jilly.jpg"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/jilly.jpg" className="card-img-top custom-img" alt="Jilly's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Jillian Sechrest</h5>
                   <p className="card-text">Back-end Web Developer</p>
@@ -36,8 +38,8 @@ function About(props) {
               </div>
             </div>
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/lulu.jpg"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/lulu.jpg" className="card-img-top custom-img" alt="Lulu's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Lulu Cao</h5>
                   <p className="card-text">Front-end Web Developer</p>
@@ -46,8 +48,8 @@ function About(props) {
               </div>
             </div>
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/placeholder.png" className="card-img-top custom-img" alt="Katrina's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Katrina Behnken</h5>
                   <p className="card-text">Back-end Web Developer</p>
@@ -60,8 +62,8 @@ function About(props) {
         <div className="container">
           <div className="row">
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/tracey.jpg"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/tracey.jpg" className="card-img-top custom-img" alt="Tracey's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Tracey Hebert</h5>
                   <p className="card-text">Front-end Web Developer</p>
@@ -70,8 +72,8 @@ function About(props) {
               </div>
             </div>
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/alejandra.jpg"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/alejandra.jpg" className="card-img-top custom-img" alt="Alejandra's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Alejandra P. Hernandez</h5>
                   <p className="card-text">Front-end Web Developer</p>
@@ -80,41 +82,14 @@ function About(props) {
               </div>
             </div>
             <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "s/placeholder.png"} className="card-img-top" alt="..."/>
+              <div className="card" style={{width:"18rem"}}>
+                <img src="./_images/placeholder.png" className="card-img-top custom-img" alt="Anja's Photo"/>
                 <div className="card-body">
                   <h5 className="card-title">Anja Wiesner</h5>
                   <p className="card-text">Content Manager</p>
                   <a href="https://github.com/awiesn" className="btn btn-primary">GitHub Profile</a>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h5 className="card-title">Dooz Zher</h5>
-                  <p className="card-text">Content Manager</p>
-                  <a href="https://github.com/doozher" className="btn btn-primary">GitHub Profile</a>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card" style={{width: "18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top" alt="..."/>
-                <div className="card-body">
-                  <h5 className="card-title">Sumaia Ali</h5>
-                  <p className="card-text">Full-stack Web Developer</p>
-                  <a href="https://github.com/Sumaia45" className="btn btn-primary">GitHub Profile</a>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              
             </div>
           </div>
         </div>       
