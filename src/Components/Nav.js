@@ -15,14 +15,22 @@ function Nav(props) {
             <div className="collapse navbar-collapse" id="navbarCollapse">
               <ul className="navbar-nav ml-auto">  
                 <li className="nav-item">
-                  <Link to='home' className="nav-link" />  
+                  <Link to="home" className="nav-link">
+                    Home
+                  </Link>
+                  {/* <a className="nav-link" href="#">Home</a> */}
                 </li>
                 <li className="nav-item">
-                  {/* <Link to='about' className="nav-link" /> */}
-                  <a className="nav-link" href="#">About</a>
+                  <Link to="/about" className="nav-link">
+                    About
+                  </Link>
+                  {/* <a className="nav-link" href="#">About</a> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Resources</a>
+                  <Link to="/resources" className="nav-link">
+                    Resources
+                  </Link>
+                  {/* <a className="nav-link" href="#">Resources</a> */}
                 </li>
               </ul>
               <div className="dropdown">
@@ -33,7 +41,10 @@ function Nav(props) {
                   <a className="dropdown-item" href="#">Profile</a>
                   <a className="dropdown-item" href="#">Settings & Privacy</a>
                   <a className="dropdown-item" href="#">Help</a>
-                  <a className="dropdown-item" href="#">Sign out</a>
+                  <Link to="/logout" className="dropdown-item">
+                    Sign Out
+                  </Link>
+                  {/* <a className="dropdown-item" href="#">Sign out</a> */}
                 </div>
               </div>
             </div>
