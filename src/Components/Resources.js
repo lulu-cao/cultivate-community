@@ -1,6 +1,6 @@
 import Nav from './Nav'
-import '../html-css/css/app.css';
-import '../html-css/css/resource.css'
+//import '../html-css/css/app.css';
+//import '../html-css/css/resource.css'
 
 function Resources(props) {
     return (
