@@ -1,0 +1,13 @@
+@mixin shadow-variant($shadow) {
+  border-radius: $border-radius;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: $shadow $shadow 0 0 rgba(0, 0, 0, 0.1);
+  transition: transform 200ms, box-shadow 200ms;
+
+  a & {
+    &:hover {
+      transform: translate(-.2rem, -.2rem);
+      box-shadow: $shadow+.2rem $shadow+.2rem 0 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@each $size, $length in $line-height {
+  .lh-#{$size} {
+    line-height: $length !important;
+  }
+}

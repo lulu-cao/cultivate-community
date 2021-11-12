@@ -1,0 +1,25 @@
+a {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: $gray-300;
+  padding-bottom: 2px;
+  transition: $transition-base;
+
+  &:hover {
+    border-color: $gray-500;
+  }
+}
+
+a.link-unstyled {
+  border-bottom: 0;
+}
+
+.nav-link,
+.page-link,
+.dropdown-item {
+  border-bottom: none;
+}
+
+.w-60 {
+  max-width: 60%;
+}
