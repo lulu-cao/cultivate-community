@@ -2,28 +2,30 @@
 
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-As mental health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources. 
-
-More features will be allowed for a registered user. A registered user can load "care contacts" (trusted individuals). If a user notices triggers for a mental health emergency, they can then use the app to drop their location to their care contacts as well as local community response teams. Registered users can also find local resources for drug/alcohol counseling assistance with a search class being "Partner/Spousal Support".
-
 ## Table of Contents
-- [Installation](#installation)
+- [Description](#description)
 - [Deployment](#deployment)
 - [Contributors](#contributors)
 - [Questions](#questions)
 - [License](#license) 
 
-## Installation
+## Description
+Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides a litany of local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
+
+The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
+
+This website is the result of a hackathon event organized by [Girl Develop It](https://girldevelopit.com/). Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.
+
+<!-- ## Installation
 To install this app, enter the following command in your terminal:
 ```sh
 ...
-```
+``` -->
 
 ## Deployment
 Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
 
-![walkthrough.gif](./assets/images/walkthrough.gif)
+<!-- ![walkthrough.gif](./assets/images/walkthrough.gif) -->
 
 ## Contributors
 
@@ -38,10 +40,6 @@ Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
 [Alejandra P. Hernandez](https://github.com/alepehernandez)
 
 [Anja Wiesner](https://github.com/awiesn)
-
-[Dooz Zher](https://github.com/doozher)
-
-[Sumaia Ali](https://github.com/Sumaia45)
 
 ## Questions
 
