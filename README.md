@@ -3,9 +3,16 @@
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-As mental Health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources. 
+As mental health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources. 
 
 More features will be allowed for a registered user. A registered user can load "care contacts" (trusted individuals). If a user notices triggers for a mental health emergency, they can then use the app to drop their location to their care contacts as well as local community response teams. Registered users can also find local resources for drug/alcohol counseling assistance with a search class being "Partner/Spousal Support".
+
+## Table of Contents
+- [Installation](#installation)
+- [Deployment](#deployment)
+- [Contributors](#contributors)
+- [Questions](#questions)
+- [License](#license) 
 
 ## Installation
 To install this app, enter the following command in your terminal:
@@ -13,32 +20,36 @@ To install this app, enter the following command in your terminal:
 ...
 ```
 
-## Usage
-![walkthrough gif](./assets/images/walkthrough.gif)
+## Deployment
+Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
 
-## License
-[MIT](https://opensource.org/licenses/MIT)
+![walkthrough.gif](./assets/images/walkthrough.gif)
 
 ## Contributors
-Sumaia
 
-Jilly
+[Jillian Sechrest](https://github.com/Sechrest-J)
 
-Lulu
+[Lulu Cao](https://github.com/lulu-cao)
 
-Katrina
+[Katrina Behnken](https://github.com/kbehnken)
 
-Alejandra
+[Tracey Hebert](https://github.com/traceyhebert9)
 
-Dooz
+[Alejandra P. Hernandez](https://github.com/alepehernandez)
 
-Tracey
+[Anja Wiesner](https://github.com/awiesn)
 
-Anja
+[Dooz Zher](https://github.com/doozher)
+
+[Sumaia Ali](https://github.com/Sumaia45)
 
 ## Questions
+
 For questions, please email Jilian at [jillian.sechrest@gmail.com](mailto:jillian.sechrest@gmail.com).
 
+## License
+
+Licensed under the [MIT](https://opensource.org/licenses/MIT) license.
 
 
 
