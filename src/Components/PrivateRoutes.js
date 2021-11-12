@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
-import { connect, useDispatch } from 'react-redux';
-import { Navigate } from 'react-router-dom';
-import { requestUserData } from '../Redux/Actions/userActions';
+import React from 'react';
+import { connect } from 'react-redux';
+import { Navigate, Route } from 'react-router-dom';
 
 function PrivateRoutes({component: Component, ...rest }) {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(requestUserData());
-    },[dispatch])
+    
     if (!this.props.isLoggedIn) {
         return (<Navigate to = '/logout' />)
     }
-    return 
+    return <Route {...rest} render = {props => (
+        <Component {...props} />
+    )}/>
 }
 
 function mapStateToProps(reduxState) {

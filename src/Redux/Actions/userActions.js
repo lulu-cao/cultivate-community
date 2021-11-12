@@ -1,6 +1,6 @@
 import { userConsts } from '../Consts/userConsts';
 
-// Request all user data
+// Validate user login credentials
 export function validateUser(user, password) {
     return function (dispatch, getState) {
         const storedUser = getState().user.user.username;
@@ -30,5 +30,18 @@ function validateUserSuccess() {
 function validateUserFailed() {
     return {
         type: userConsts.VALIDATE_USER_FAILED
+    };
+}
+
+// Log user out
+export function logoutUser(user, password) {
+    return function (dispatch, getState) {
+        dispatch(logoutUserSuccess)
+    }
+}
+
+function logoutUserSuccess() {
+    return {
+        type: userConsts.LOGOUT_USER_SUCCESS
     };
 }
