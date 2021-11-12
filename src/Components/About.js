@@ -1,11 +1,10 @@
 import React from 'react'; 
 import Nav from './Nav';
-import '../html-css/css/app.css';
 
 function About(props) {
   return (
     <div>
-      <Header />
+      <Nav />
       <main>
       <br/>
       <div className="container">
