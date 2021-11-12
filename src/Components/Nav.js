@@ -27,15 +27,13 @@ function Nav(props) {
               {/* <a class="nav-link" aria-current="page" href="./aboutpage.html">About</a> */}
             </li>
             <li class="nav-item">
-              <Link to="/login" class="nav-link">
+              <Link to="/resources" class="nav-link">
                 Resources
               </Link>
               {/* <a class="nav-link" href="./resourcepage.html">Resources</a> */}
             </li>
           </ul>
-
           <button class="btn btn-outline-success" type="submit"><a href="loginpage.html" style={{color:"black", textDecoration: "none"}}>Logout</a></button>
-
         </div>
       </div>
     </nav>
