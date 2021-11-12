@@ -1,0 +1,8 @@
+ul li a.page-link {
+  padding: $pagination-padding-y $pagination-padding-x;
+
+  &:hover {
+    color: $pagination-hover-color;
+    border-color: $pagination-hover-border-color;
+  }
+}

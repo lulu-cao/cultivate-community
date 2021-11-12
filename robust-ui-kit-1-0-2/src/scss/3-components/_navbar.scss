@@ -1,0 +1,32 @@
+.navbar {
+  font-weight: $headings-font-weight;
+
+  a:not(.btn) {
+    border-bottom: 0;
+  }
+}
+
+.navbar-sm {
+  padding-top: ($spacer / 2);
+  padding-bottom: ($spacer / 2);
+}
+
+.navbar-lg {
+  padding-top: ($spacer * 1.5);
+  padding-bottom: ($spacer * 1.5);
+}
+
+.navbar-absolute {
+  position: absolute;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  z-index: 3;
+}
+
+@include media-breakpoint-down(md) {
+  .navbar-transparant {
+    background: rgba(0, 0, 0, 0.65)
+  }
+}

@@ -1,0 +1,12 @@
+.btn-sm {
+  font-weight: 600;
+}
+
+@each $color, $value in $social-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}

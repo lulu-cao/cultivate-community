@@ -1,0 +1,23 @@
+.nav-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.breadcrumb-item a {
+  border-bottom: 0
+}
+
+.nav-item-avatar {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.nav-sidebar {
+  max-height: 100vh;
+  overflow-y: auto;
+
+  .nav-link {
+    width: 100%;
+  }
+}

@@ -1,0 +1,152 @@
+// Colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #f0f2f4;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #1283da;
+$indigo:  #6610f2;
+$purple:  #7c39ed;
+$pink:    #e929ba;
+$red:     #e52e4d;
+$orange:  #f7653b;
+$yellow:  #df8d00;
+$green:   #11af22;
+$teal:    #02a9a4;
+$cyan:    #01a9da;
+
+$colors: ();
+$colors: map-merge((
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $purple;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-200;
+$dark:          $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "white":      $white
+), $theme-colors);
+
+$social-colors: (
+	"facebook": #3b5998,
+	"twitter": #1da1f2,
+	"google": #dc4e41,
+	"youtube": #f00,
+	"vimeo": #1ab7ea,
+	"dribbble": #ea4c89,
+	"github": #181717,
+	"instagram": #e4405f,
+	"pinterest": #bd081c,
+	"flickr": #0063dc,
+	"bitbucket": #0052cc
+);
+
+// Body
+$body-bg: #fff;
+$body-color: $gray-800;
+
+// Spacers
+$spacer: 1rem;
+
+// Typography
+$font-family-sans-serif: 'Lato', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$headings-font-weight: 700;
+$display1-weight: 700;
+$display2-weight: 700;
+$display3-weight: 700;
+$display4-weight: 700;
+
+$lead-font-size: 1.25rem;
+$lead-font-weight: 400;
+
+// Links
+$link-color: $gray-800;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Buttons
+$btn-font-weight: 700;
+
+// Border radius
+$border-radius: .35rem;
+$border-radius-lg: .4rem;
+$border-radius-sm: .25rem;
+
+// Navbar
+$navbar-padding-y: $spacer;
+$navbar-brand-font-size: 1.5rem;
+$navbar-nav-link-padding-x: .85rem;
+
+// Nav
+// $nav-pills-border-radius:  $border-radius;
+$nav-pills-link-active-color: $gray-800;
+$nav-pills-link-active-bg: $gray-300;
+
+// Spacing
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge((
+  -3: -$spacer,
+  -2: -($spacer * .5),
+  -1: -($spacer * .25),
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4.5),
+  7: ($spacer * 6),
+  8: ($spacer * 7.5),
+  9: ($spacer * 9)
+), $spacers);
