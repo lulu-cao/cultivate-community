@@ -1,0 +1,19 @@
+.countdown {
+  max-width: 560px;
+  margin: auto;
+
+  .time {
+    flex: 1;
+  }
+
+  .seperator,
+  .time span {
+      font-size: 3rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 4rem;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 5rem;
+      }
+  }
+}

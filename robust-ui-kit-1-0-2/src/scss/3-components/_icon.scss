@@ -1,0 +1,11 @@
+.icon {
+  padding: ($spacer / 1.5);
+  border-radius: $border-radius;
+  background: $primary;
+  text-align: center;
+  display: inline-block;
+  color: $white;
+  font-size: 2rem;
+  line-height: 1;
+  min-width: 53px;
+}
