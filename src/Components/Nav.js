@@ -1,49 +1,45 @@
-import React, { Component } from 'react'; 
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-class Nav extends Component {
+function Nav(props) {
+  return (
+    
+  //This is the area where you paste your HTML codes
+          <nav className="navbar navbar-lg navbar-expand-lg navbar-dark bg-teal">
+          <div className="container">
+            <a className="navbar-brand" href="#"><img src={process.env.PUBLIC_URL + "/images/logo-white.png"}/></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-    render() {
-
-        return (
-
-//This is the area where you paste your HTML codes
-<nav class="navbar navbar-lg navbar-expand-lg navbar-dark bg-teal">
-<div class="container">
-  <a class="navbar-brand" href="#"><img src="_images/logo-white.png"/></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>  
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Resources</a>
-      </li>
-    </ul>
-    <div class="dropdown">
-      <button class="btn btn-outline-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        My account
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Profile</a>
-        <a class="dropdown-item" href="#">Settings & Privacy</a>
-        <a class="dropdown-item" href="#">Help</a>
-        <a class="dropdown-item" href="#">Sign out</a>
-      </div>
-    </div>
-  </div>
-</div>
-</nav>
-)
-
-    }
-
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+              <ul className="navbar-nav ml-auto">  
+                <li className="nav-item">
+                  <Link to='home' className="nav-link" />  
+                </li>
+                <li className="nav-item">
+                  {/* <Link to='about' className="nav-link" /> */}
+                  <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Resources</a>
+                </li>
+              </ul>
+              <div className="dropdown">
+                <button className="btn btn-outline-white dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  My account
+                </button>
+                <div className="dropdown-menu">
+                  <a className="dropdown-item" href="#">Profile</a>
+                  <a className="dropdown-item" href="#">Settings & Privacy</a>
+                  <a className="dropdown-item" href="#">Help</a>
+                  <a className="dropdown-item" href="#">Sign out</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </nav>
+  )
 }
 
 export default Nav;
