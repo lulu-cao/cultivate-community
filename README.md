@@ -10,11 +10,11 @@
 - [License](#license) 
 
 ## Description
-Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides a litany of local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
+Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides  local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
 
 The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
 
-This website is the result of a hackathon event organized by [Girl Develop It](https://girldevelopit.com/). Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.
+This website is the result of a hackathon event organized by [Girl Develop It](https://girldevelopit.com/). Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software development in a judgement free environment.
 
 <!-- ## Installation
 To install this app, enter the following command in your terminal:
