@@ -3,15 +3,17 @@ import React from 'react';
 function Footer(props) {
   return (
     //This is the area where you paste your HTML codes
-    <footer role="contentinfo" class="py-3 lh-1 bg-white text-center">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <small class="text-muted">&copy; 2021 - <a href="#">Cultivate Community</a>.</small>
-        </div>
-      </div>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./landingpage.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="./aboutpage.html" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="./resourcepage.html" class="nav-link px-2 text-muted">Resources</a></li>
+          <li class="nav-item"><a href="./loginpage.html" class="nav-link px-2 text-muted">Login</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Cultivate Community</p>
+      </footer>
     </div>
-    </footer>
   )
 }
 
