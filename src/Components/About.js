@@ -6,7 +6,7 @@ import '../html-css/css/resource.css'
 function About(props) {
   return (
     <div>
-      <Nav />
+      <Header />
       <main>
       <br/>
       <div className="container">
@@ -95,6 +95,7 @@ function About(props) {
         </div>       
       </div>
     </main>
+    <Footer />
     </div>
   )
 }
