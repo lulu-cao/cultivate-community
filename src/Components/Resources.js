@@ -1,12 +1,10 @@
 import Nav from './Nav'
-import '../html-css/css/app.css';
-import '../html-css/css/resource.css'
+import Footer from './Footer'
 
 function Resources(props) {
     return (
         <div>
-            <Header />
-
+            <Nav />
             <div className="container"><br/>
                 <h3>Alternate Alert Response</h3>
                 <p>Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. 

@@ -1,11 +1,11 @@
 import React from 'react'; 
 import Nav from './Nav';
-import '../html-css/css/app.css';
+import Footer from './Footer';
 
 function About(props) {
   return (
     <div>
-      <Header />
+      <Nav />
       <main>
       <br/>
       <div className="container">
