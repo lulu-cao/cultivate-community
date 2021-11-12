@@ -25,6 +25,12 @@ export default function reducer(previousState = initialState, action) {
                 isLoggedIn: false,
                 loginFailed: true
             });
+        case userConsts.LOGOUT_USER_SUCCESS:
+            return ({
+                ...previousState,
+                isLoggedIn: false,
+                loginFailed: false
+            });
         default: return (previousState);
     }
 }
