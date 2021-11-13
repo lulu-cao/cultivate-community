@@ -8,9 +8,11 @@ export function validateUser(user, password) {
         if(user === storedUser && password === storedPassword) {
             console.log('action success')
             dispatch(validateUserSuccess())
+            return true
         } else {
             console.log('action failed')
             dispatch(validateUserFailed)
+            return false
         }
     }
 }

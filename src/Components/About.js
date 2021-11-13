@@ -28,7 +28,7 @@ function About(props) {
           <div className="row">
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/jilly.jpg"} className="card-img-top custom-img" alt="Jilly's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/jilly.jpg"} className="card-img-top custom-img" alt="Jillian Sechrest"/>
                 <div className="card-body">
                   <h5 className="card-title">Jillian Sechrest</h5>
                   <p className="card-text">Back-end Web Developer</p>
@@ -38,7 +38,7 @@ function About(props) {
             </div>
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/lulu.jpg"} className="card-img-top custom-img" alt="Lulu's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/lulu.jpg"} className="card-img-top custom-img" alt="Lulu Cao"/>
                 <div className="card-body">
                   <h5 className="card-title">Lulu Cao</h5>
                   <p className="card-text">Front-end Web Developer</p>
@@ -48,7 +48,7 @@ function About(props) {
             </div>
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Katrina's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Katrina Behnken"/>
                 <div className="card-body">
                   <h5 className="card-title">Katrina Behnken</h5>
                   <p className="card-text">Back-end Web Developer</p>
@@ -62,7 +62,7 @@ function About(props) {
           <div className="row">
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/tracey.jpg"} className="card-img-top custom-img" alt="Tracey's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/tracey.jpg"} className="card-img-top custom-img" alt="Tracey Hebert"/>
                 <div className="card-body">
                   <h5 className="card-title">Tracey Hebert</h5>
                   <p className="card-text">Front-end Web Developer</p>
@@ -72,7 +72,7 @@ function About(props) {
             </div>
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/alejandra.jpg"} className="card-img-top custom-img" alt="Alejandra's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/alejandra.jpg"} className="card-img-top custom-img" alt="Alejandra Hernandez"/>
                 <div className="card-body">
                   <h5 className="card-title">Alejandra P. Hernandez</h5>
                   <p className="card-text">Content Manager</p>
@@ -82,7 +82,7 @@ function About(props) {
             </div>
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images//placeholder.png"} className="card-img-top custom-img" alt="Anja's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images//placeholder.png"} className="card-img-top custom-img" alt="Anja Wiesner"/>
                 <div className="card-body">
                   <h5 className="card-title">Anja Wiesner</h5>
                   <p className="card-text">Content Manager</p>
