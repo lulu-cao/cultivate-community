@@ -36,9 +36,9 @@ function validateUserFailed() {
 }
 
 // Log user out
-export function logoutUser(user, password) {
-    return function (dispatch, getState) {
-        dispatch(logoutUserSuccess)
+export function logoutUser() {
+    return function (dispatch) {
+        dispatch(logoutUserSuccess())
     }
 }
 
