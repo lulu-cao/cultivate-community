@@ -1,5 +1,8 @@
-import Nav from './Nav'
-import Footer from './Footer'
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import Nav from './Nav';
+import ManageCareTeam from './ManageCareTeam'
+import Footer from './Footer';
 
 function Resources(props) {
     return (
@@ -9,10 +12,25 @@ function Resources(props) {
                 <h3>Alternate Alert Response</h3>
                 <p>Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. 
                 Cultivate Community is a website that provides an alternate response model for individuals in mental health crisis.</p>
-                <button type="button" className="btn btn-warning">Log in to Send an Alert</button><br/><br/><br/>
-
+                {!props.isLoggedIn ?
+                    (
+                        <p>Please <Link to="/login"> log in </Link> to view or manage or Care Team members.</p>
+                    ):
+                    (
+                        <div>
+                            <button type="button" className="btn btn-warning">Send Alert to All Care Team Members</button><br/><br/><br/>
+                        </div>
+                    )
+                }
                 <h3>Care Teams</h3>
-                <p>Please log in or create an account to see care teams customized to your specific location.</p>
+                {!props.isLoggedIn ?
+                    (
+                        <p>Please <Link to="/login"> log in </Link> to view or manage or Care Team members.</p>
+                    ):
+                    (
+                        <ManageCareTeam />
+                    )
+                }
             </div>
 
             <br/><br/>
@@ -113,4 +131,12 @@ function Resources(props) {
     )
 }
 
-export default Resources;
+function mapStateToProps(reduxState) {
+    return {
+        username: reduxState.user.username,
+        password: reduxState.user.password,
+        isLoggedIn: reduxState.user.isLoggedIn
+    }
+}
+
+export default connect(mapStateToProps)(Resources);
