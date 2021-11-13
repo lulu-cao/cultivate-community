@@ -20,13 +20,11 @@ function Nav(props) {
               <Link to="/login" className="nav-link" aria-current="page">
                 Home
               </Link>
-              {/* <a className="nav-link" aria-current="page" href="./loginpage.html">Home</a> */}
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link" aria-current="page">
                 About
               </Link>
-              {/* <a className="nav-link" aria-current="page" href="./aboutpage.html">About</a> */}
             </li>
             <li className="nav-item">
               <Link to="/resources" className="nav-link">
