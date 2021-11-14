@@ -44,7 +44,7 @@ function Nav(props) {
             (
               <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
                 Logout
-            </button>
+              </button>
             )
           }
         </div>
