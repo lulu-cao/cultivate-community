@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Nav(props) {
@@ -32,9 +33,20 @@ function Nav(props) {
               </Link>
             </li>
           </ul>
-          <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
-            Logout
-          </button>
+          {!props.isLoggedIn ?
+            (
+              <Link to="/login">
+                <button className="btn btn-outline-success" type="submit" style={{color:"black", textDecoration: "none"}}>
+                  Login
+                </button>
+              </Link>
+            ):
+            (
+              <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
+                Logout
+            </button>
+            )
+          }
         </div>
       </div>
     </nav>
@@ -42,4 +54,12 @@ function Nav(props) {
   )
 }
 
-export default Nav;
+function mapStateToProps(reduxState) {
+  return {
+      username: reduxState.user.username,
+      password: reduxState.user.password,
+      isLoggedIn: reduxState.user.isLoggedIn
+  }
+}
+
+export default connect(mapStateToProps)(Nav);
