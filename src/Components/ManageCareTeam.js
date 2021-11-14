@@ -13,9 +13,10 @@ function ManageCareTeam(props) {
 
 function mapStateToProps(reduxState) {
     return {
-        username: reduxState.user.username,
-        password: reduxState.user.password,
-        isLoggedIn: reduxState.user.isLoggedIn
+        firstName: reduxState.careMember.firstName,
+        lastName: reduxState.careMember.lastName,
+        smsAddress: reduxState.careMember.smsAddress,
+        loading: reduxState.careMember.loading
     }
 }
 
