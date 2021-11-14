@@ -3,11 +3,14 @@
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
-- [Description](#description)
-- [Deployment](#deployment)
-- [Contributors](#contributors)
-- [Questions](#questions)
-- [License](#license) 
+- [Cultivate Community](#cultivate-community)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Getting Started](#getting-started)
+  - [Deployment](#deployment)
+  - [Contributors](#contributors)
+  - [Questions](#questions)
+  - [License](#license)
 
 ## Description
 Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides  local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
@@ -16,14 +19,15 @@ The Cultivate Community project aims to aid as a bridge to reduce interaction be
 
 This website is the result of a hackathon event organized by [Girl Develop It](https://girldevelopit.com/). Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software development in a judgement free environment.
 
-<!-- ## Installation
-To install this app, enter the following command in your terminal:
-```sh
-...
-``` -->
+## Getting Started
+
+1. Clone this repository with: `git clone https://github.com/lulu-cao/cultivate-community`.
+2. Navigate to the root of the project directory. Type `npm i`.
+3. Type `npm start` in the root of the project directory.
+4. To login, use a web browser to navigate to port 3000 on your host.
 
 ## Deployment
-Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
+Click [here](https://lulu-cao.github.io/cultivate-community/) for a live demo.
 
 <!-- ![walkthrough.gif](./assets/images/walkthrough.gif) -->
 
@@ -43,7 +47,7 @@ Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
 
 ## Questions
 
-For questions, please email Jilian at [jillian.sechrest@gmail.com](mailto:jillian.sechrest@gmail.com).
+For questions, please email Jillian at [jillian.sechrest@gmail.com](mailto:jillian.sechrest@gmail.com).
 
 ## License
 
