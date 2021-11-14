@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
-import ManageCareTeam from './ManageCareTeam'
+import ManageCareTeam from './ManageCareTeam';
 import Footer from './Footer';
 
 function Resources(props) {
