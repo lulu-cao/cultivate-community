@@ -22,9 +22,10 @@ This website is the result of a hackathon event organized by [Girl Develop It](h
 ## Getting Started
 
 1. Clone this repository with: `git clone https://github.com/lulu-cao/cultivate-community`.
-2. Navigate to the root of the project directory. Type `npm i`.
-3. Type `npm start` in the root of the project directory.
-4. To login, use a web browser to navigate to port 3000 on your host.
+2. Navigate to the root of the project directory.
+3. Type `npm i`.
+4. Type `npm start`.
+5. Use a web browser to navigate to port 3000 on your host.
 
 ## Deployment
 Click [here](https://lulu-cao.github.io/cultivate-community/) for a live demo.
