@@ -1,8 +1,8 @@
 import { careMemberConsts } from '../Consts/careMemberConsts';
 
 const initialState = {
-    careMember: {firstName: '', lastName: '', smsAddress: '', phoneNumber: ''},
-    careMembers: [{firstName: 'Marge', lastName: 'Simpson', smsAddress: 'msimpson@txt.att.net', phoneNumber: '555-555-5555'}],
+    careMember: {firstName: '', lastName: '', smsAddress: '', phone: ''},
+    careMembers: [{firstName: 'Marge', lastName: 'Simpson', smsAddress: 'msimpson@txt.att.net', phone: '555-555-5555'}],
     loading: false
 };
 

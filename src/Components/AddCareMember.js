@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 function AddCareMember(props) {
-    const navigate = useNavigate();
     const [showAddCareMember, setShowAddCareMember] = useState(false);
     const [firstNameInput, setFirstNameInput] = useState('');
     const [lastNameInput, setLastNameInput] = useState('');
     const [smsAddressInput, setSmsAddressInput] = useState('');
+    const [phoneInput, setPhoneInput] = useState('');
     const toggleAddCareMember = () => {
         return setShowAddCareMember(!showAddCareMember);
     };
-    const handleAddCareMember = (firstNameInput, lastNameInput, smsAddressInput) => {
+    const handleAddCareMember = (firstNameInput, lastNameInput, smsAddressInput, phoneInput) => {
         props.addCareMember(firstNameInput, lastNameInput, smsAddressInput);
             
     }
@@ -36,7 +35,11 @@ function AddCareMember(props) {
                             </div>
                             <div className="form-group">
                                 <label>SMS Address</label>
-                                <input className="form-control form-control-lg" type="text" name="smsAddressInput" value={smsAddressInput} onChange={e => setSmsAddressInput(e.target.value)} />
+                                <input className="form-control form-control-lg" type="email" name="smsAddressInput" value={smsAddressInput} onChange={e => setSmsAddressInput(e.target.value)} />
+                            </div>
+                            <div className="form-group">
+                                <label>Phone Number</label>
+                                <input className="form-control form-control-lg" type="tel" name="phone" value={phoneInput} onChange={e => setPhoneInput(e.target.value)} />
                             </div>
                             <div className="text-center mt-3">
                             <button  type="button" className="btn btn-warning" style={{marginRight: "5px"}} onClick={toggleAddCareMember}>
@@ -59,6 +62,7 @@ function mapStateToProps(reduxState) {
         firstName: reduxState.careMember.firstName,
         lastName: reduxState.careMember.lastName,
         smsAddress: reduxState.careMember.smsAddress,
+        phone: reduxState.careMember.phone,
         loading: reduxState.careMember.loading
     }
 }
