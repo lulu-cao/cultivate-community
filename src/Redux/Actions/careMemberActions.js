@@ -3,22 +3,14 @@ import { careMemberConsts } from '../Consts/careMemberConsts';
 // Request all care team members
 export function requestCareMembers() {
     return function (dispatch) {
-        dispatch(requestCareMembersPending());
-        axios.get(`${process.env.REACT_APP_API_PROTOCOL}${process.env.REACT_APP_API_SERVER}:${process.env.REACT_APP_API_PORT}/api/v1/care-members`, {headers: authHeader()})
-        .then(res => {
-            dispatch(requestCareMembersSuccess(res.data))
-        })
-        .catch(err => {
-            console.log(err);
-        });
+        dispatch(requestCareMembersSuccess())
     }
-    
 }
-function requestCareMembersPending() {
-    return {
-        type: careMemberConsts.REQUEST_CARE_MEMBERS_PENDING
-    };
-}
+// function requestCareMembersPending() {
+//     return {
+//         type: careMemberConsts.REQUEST_CARE_MEMBERS_PENDING
+//     };
+// }
 function requestCareMembersSuccess(data) {
     return {
         type: careMemberConsts.REQUEST_CARE_MEMBERS_SUCCESS,
@@ -29,6 +21,7 @@ function requestCareMembersSuccess(data) {
 // Create a new care team member
 export function addCareMemberData() {
     return function (dispatch, getState) {
+        // const { memberFirstName, memberLastName, memberSmsAddress } = getState().careMember.careMember
         const { careMember } = getState().careMember;
         let formData = new FormData();
 
