@@ -1,11 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AddCareMember from './AddCareMember';
+import CareMember from './CareMember';
 
 function ManageCareTeam(props) {
+    const mappedCareMembers = props.careMembers.map((member) => {
+        return <CareMember member={member} />
+    })
     return (
         <div>
-            Care Team list goes here.
+            {mappedCareMembers}
             <AddCareMember />
         </div>
     )
@@ -13,9 +17,7 @@ function ManageCareTeam(props) {
 
 function mapStateToProps(reduxState) {
     return {
-        firstName: reduxState.careMember.firstName,
-        lastName: reduxState.careMember.lastName,
-        smsAddress: reduxState.careMember.smsAddress,
+        careMembers: reduxState.careMember.careMembers,
         loading: reduxState.careMember.loading
     }
 }
