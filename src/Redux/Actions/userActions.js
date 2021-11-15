@@ -8,9 +8,11 @@ export function validateUser(user, password) {
         if(user === storedUser && password === storedPassword) {
             console.log('action success')
             dispatch(validateUserSuccess())
+            return true
         } else {
             console.log('action failed')
             dispatch(validateUserFailed)
+            return false
         }
     }
 }
@@ -34,9 +36,9 @@ function validateUserFailed() {
 }
 
 // Log user out
-export function logoutUser(user, password) {
-    return function (dispatch, getState) {
-        dispatch(logoutUserSuccess)
+export function logoutUser() {
+    return function (dispatch) {
+        dispatch(logoutUserSuccess())
     }
 }
 

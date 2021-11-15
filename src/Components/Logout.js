@@ -1,11 +1,16 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { logoutUser } from '../Redux/Actions/userActions';
 
 function Logout(props) {
-    props.logoutUser();
-    (<Navigate to = '/logout' />)
+    const navigate = useNavigate();
+    useEffect(() => {
+        props.logoutUser();
+        navigate('/login');
+        return null;
+    })
+    return null;
 }
 
 function mapStateToProps(reduxState) {

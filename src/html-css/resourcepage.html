@@ -15,43 +15,46 @@
 </head>
 
 <body>
-    <!--begin nav bar for all pages-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="_images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Resources</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <button class="btn btn-outline-success" type="submit">Login</button>
-        </div>
+  <!--begin nav bar for all pages-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./_images/logo.png" alt="Cultivate Community"/></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./landingpage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./aboutpage.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resourcepage.html">Resources</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit"><a href="loginpage.html" style="color:black; text-decoration: none;">Log In/Out</a></button>
       </div>
-    </nav>
-    <!--end nav bar for all pages-->
+    </div>
+  </nav>
+  <!--end nav bar for all pages-->
 
+  <div class="container"><br/>
+    <h3>Alternate Alert Response</h3>
+    <p>Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. 
+      Cultivate Community is a website that provides an alternate response model for individuals in mental health crisis.</p>
+    <button type="button" class="btn btn-warning">Log in to Send an Alert</button><br/><br/><br/>
+
+    <h3>Care Teams</h3>
+    <p>Please log in or create an account to see care teams customized to your specific location.</p>
+    </div>
+
+  <br/><br/>
+
+<div class="container">
 <div class="accordion accordion-flush" id="accordionFlushExample">
+  <h3>General Resources</h3>
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -114,25 +117,43 @@
       </div>
     </div>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Care Teams
-        </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-      </div>
-    </div>
-    <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingFour">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-          Other Resources
+          Helpful Links
         </button>
       </h2>
       <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        <div class="accordion-body">
+          <ul>
+            <li>
+              <a href="https://al-anon.org/">Al-Anon Family Groups</a>
+            </li>
+            <li>
+              <a href="https://www.nar-anon.org/">Nar-Anon Family Groups</a>
+            </li>
+            <li>
+              <a href="https://www.smartrecovery.org/family/">SMART Recovery</a>
+            </li>
+            <li>
+              <a href="https://www.ncbon.com/discipline-compliance-drug-monitoring-programs">Chemical Dependency Discipline Program</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+  </div>
+</div>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="./landingpage.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="./aboutpage.html" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="./resourcepage.html" class="nav-link px-2 text-muted">Resources</a></li>
+        <li class="nav-item"><a href="./loginpage.html" class="nav-link px-2 text-muted">Login</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2021 Cultivate Community</p>
+    </footer>
   </div>
 
     

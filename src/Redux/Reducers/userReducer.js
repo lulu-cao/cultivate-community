@@ -17,7 +17,6 @@ export default function reducer(previousState = initialState, action) {
             return ({
                 ...previousState,
                 isLoggedIn: true,
-                user: action.payload
             });
         case userConsts.VALIDATE_USER_FAILED:
             return ({

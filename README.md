@@ -2,28 +2,35 @@
 
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
 
-## Description
-As mental health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources. 
-
-More features will be allowed for a registered user. A registered user can load "care contacts" (trusted individuals). If a user notices triggers for a mental health emergency, they can then use the app to drop their location to their care contacts as well as local community response teams. Registered users can also find local resources for drug/alcohol counseling assistance with a search class being "Partner/Spousal Support".
-
 ## Table of Contents
-- [Installation](#installation)
-- [Deployment](#deployment)
-- [Contributors](#contributors)
-- [Questions](#questions)
-- [License](#license) 
+- [Cultivate Community](#cultivate-community)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Getting Started](#getting-started)
+  - [Deployment](#deployment)
+  - [Contributors](#contributors)
+  - [Questions](#questions)
+  - [License](#license)
 
-## Installation
-To install this app, enter the following command in your terminal:
-```sh
-...
-```
+## Description
+Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. Cultivate Community is a website that provides  local community resources and support for those in distress, or who love and care for those dealing with mental health struggles and diseases like addiction. It also provides an alternate response model for individuals in mental health crisis.
+
+The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
+
+This website is the result of a hackathon event organized by [Girl Develop It](https://girldevelopit.com/). Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software development in a judgement free environment.
+
+## Getting Started
+
+1. Clone this repository with: `git clone https://github.com/lulu-cao/cultivate-community`.
+2. Navigate to the root of the project directory.
+3. Type `npm i`.
+4. Type `npm start`.
+5. Use a web browser to navigate to port 3000 on your host.
 
 ## Deployment
-Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
+Click [here](https://lulu-cao.github.io/cultivate-community/) for a live demo.
 
-![walkthrough.gif](./assets/images/walkthrough.gif)
+<!-- ![walkthrough.gif](./assets/images/walkthrough.gif) -->
 
 ## Contributors
 
@@ -39,13 +46,9 @@ Click [here](https://lulu-cao.github.io/cultivate-community/) to visit the site.
 
 [Anja Wiesner](https://github.com/awiesn)
 
-[Dooz Zher](https://github.com/doozher)
-
-[Sumaia Ali](https://github.com/Sumaia45)
-
 ## Questions
 
-For questions, please email Jilian at [jillian.sechrest@gmail.com](mailto:jillian.sechrest@gmail.com).
+For questions, please email Jillian at [jillian.sechrest@gmail.com](mailto:jillian.sechrest@gmail.com).
 
 ## License
 
