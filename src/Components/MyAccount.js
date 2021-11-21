@@ -1,6 +1,5 @@
 import React from 'react'; 
 import Nav from './Nav';
-import '../html-css/css/app.css';
 import '../html-css/css/resource.css'
 
 function MyAccount(props) {

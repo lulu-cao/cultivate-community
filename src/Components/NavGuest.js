@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 
 function NavGuest(props) {
-// Not sure how you want to edit the below but feel free to change mine. See the bottom of this file. --Lulu
   const navigate = useNavigate();
-//   const handleLogout = () => {
-//     navigate('/logout');
-//   }
+  const handleLogout = () => {
+    navigate('/logout');
+  }
   return (
   <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -34,12 +33,20 @@ function NavGuest(props) {
               </Link>
             </li>
           </ul>
-          {/* Not sure how you want to edit the below but feel free to change mine. --Lulu */}
-            <Link to="/loginGuest">
+          {!props.isLoggedIn ?
+            (
+              <Link to="/loginGuest">
                 <button className="btn btn-outline-success" type="submit" style={{color:"black", textDecoration: "none"}}>
-                    Log In
+                  Log In
                 </button>
-            </Link>
+              </Link>
+            ):
+            (
+              <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
+                Log Out
+              </button>
+            )
+          }
         </div>
       </div>
     </nav>
@@ -47,14 +54,12 @@ function NavGuest(props) {
   )
 }
 
-// function mapStateToProps(reduxState) {
-//   return {
-//       username: reduxState.user.username,
-//       password: reduxState.user.password,
-//       isLoggedIn: reduxState.user.isLoggedIn
-//   }
-// }
+function mapStateToProps(reduxState) {
+  return {
+      username: reduxState.user.username,
+      password: reduxState.user.password,
+      isLoggedIn: reduxState.user.isLoggedIn
+  }
+}
 
-// export default connect(mapStateToProps)(NavGuest);
-
-export default NavGuest;
+export default connect(mapStateToProps)(NavGuest);

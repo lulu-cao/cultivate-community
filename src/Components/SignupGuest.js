@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { validateSignup } from '../Redux/Actions/validateSignup';
 import NavGuest from './NavGuest';
 import FooterGuest from './FooterGuest';
+import '../html-css/css/signup-guest.css'
 
 function SignupGuest(props) {
     const navigate = useNavigate();

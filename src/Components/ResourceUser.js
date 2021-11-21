@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NavUser from './NavUser';
 import ManageCareTeam from './ManageCareTeam';
 import FooterUser from './FooterUser';
+import '../html-css/css/resource.css'
 
 function ResourceUser(props) {
     return (

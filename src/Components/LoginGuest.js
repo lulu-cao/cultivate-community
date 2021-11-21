@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { validateUser } from '../Redux/Actions/userActions';
 import LoginNav from './LoginNav';
 import FooterGuest from './FooterGuest';
+import '../html-css/css/login-guest.css'
 
 function LoginGuest(props) {
     const navigate = useNavigate();

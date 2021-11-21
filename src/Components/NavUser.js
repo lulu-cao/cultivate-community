@@ -33,10 +33,20 @@ function NavUser(props) {
               </Link>
             </li>
           </ul>
-          {/* Not sure how you want to edit the below but feel free to change mine. --Lulu */}
-            <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
+          {!props.isLoggedIn ?
+            (
+              <Link to="/loginGuest">
+                <button className="btn btn-outline-success" type="submit" style={{color:"black", textDecoration: "none"}}>
+                  Log In
+                </button>
+              </Link>
+            ):
+            (
+              <button className="btn btn-outline-success" type="submit" onClick={() => {handleLogout()}} style={{color:"black", textDecoration: "none"}}>
                 Log Out
-            </button>
+              </button>
+            )
+          }
         </div>
       </div>
     </nav>
@@ -44,15 +54,12 @@ function NavUser(props) {
   )
 }
 
-// Not sure how you want to edit the below but feel free to change mine. --Lulu
-// function mapStateToProps(reduxState) {
-//   return {
-//       username: reduxState.user.username,
-//       password: reduxState.user.password,
-//       isLoggedIn: reduxState.user.isLoggedIn
-//   }
-// }
+function mapStateToProps(reduxState) {
+  return {
+      username: reduxState.user.username,
+      password: reduxState.user.password,
+      isLoggedIn: reduxState.user.isLoggedIn
+  }
+}
 
-// export default connect(mapStateToProps)(NavUser);
-
-export default NavUser;
+export default connect(mapStateToProps)(NavUser);
