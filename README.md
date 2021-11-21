@@ -34,7 +34,7 @@ Click [here](https://lulu-cao.github.io/cultivate-community/) for a live demo.
 
 ## Contributors
 
-[Jillian Sechrest](https://github.com/Sechrest-J)
+[Jillian Sechrest](https://github.com/bewaterwsnc)
 
 [Lulu Cao](https://github.com/lulu-cao)
 
