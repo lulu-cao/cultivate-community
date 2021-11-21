@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NavGuest from './NavGuest';
 import ManageCareTeam from './ManageCareTeam';
 import FooterGuest from './FooterGuest';
+import '../html-css/css/resource.css'
 
 function ResourceGuest(props) {
     return (

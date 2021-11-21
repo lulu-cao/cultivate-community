@@ -1,6 +1,7 @@
 import React from 'react'; 
 import NavUser from './NavUser';
 import FooterUser from './FooterUser';
+import '../html-css/css/about.css'
 
 function AboutUser(props) {
   return (
@@ -32,7 +33,7 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Jillian Sechrest</h5>
                   <p className="card-text">Back-end Web Developer</p>
-                  <a href="https://github.com/bewaterwsnc" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/bewaterwsnc" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -42,7 +43,7 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Lulu Cao</h5>
                   <p className="card-text">Front-end Web Developer</p>
-                  <a href="https://github.com/lulu-cao" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/lulu-cao" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -52,7 +53,7 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Katrina Behnken</h5>
                   <p className="card-text">Back-end Web Developer</p>
-                  <a href="https://github.com/kbehnken" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/kbehnken" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -66,7 +67,7 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Tracey Hebert</h5>
                   <p className="card-text">Front-end Web Developer</p>
-                  <a href="https://github.com/traceyhebert9" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/traceyhebert9" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -76,7 +77,7 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Alejandra P. Hernandez</h5>
                   <p className="card-text">Content Manager</p>
-                  <a href="https://github.com/alepehernandez" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/alepehernandez" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -86,12 +87,36 @@ function AboutUser(props) {
                 <div className="card-body">
                   <h5 className="card-title">Anja Wiesner</h5>
                   <p className="card-text">Content Manager</p>
-                  <a href="https://github.com/awiesn" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/awiesn" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>       
+        </div>     
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Dooz's Photo"/>
+                <div className="card-body">
+                  <h5 className="card-title">Dooz Zher</h5>
+                  <p className="card-text">Content Manager</p>
+                  <a href="https://github.com/doozher" className="btn btn-success">GitHub Profile</a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+            
+              </div>
+            </div>
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+              
+              </div>
+            </div>
+          </div>
+        </div>           
       </div>
     </main>
     <FooterUser />

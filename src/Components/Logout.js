@@ -8,7 +8,7 @@ function Logout(props) {
     useEffect(() => {
         props.logoutUser();
         // I changed it to homeGuest; feel free to change it back to loginGuest
-        navigate('/homeGuest');
+        navigate('/homeGuest'); 
         return null;
     })
     return null;
