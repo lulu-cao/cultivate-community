@@ -3,16 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { validateUser } from '../Redux/Actions/userActions';
 import LoginNav from './LoginNav';
-import Footer from './Footer';
+import FooterGuest from './FooterGuest';
 
-function Login(props) {
+function LoginGuest(props) {
     const navigate = useNavigate();
     const [usernameInput, setUsernameInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const handleLogin = (usernameInput, passwordInput) => {
         const isValidUser = props.validateUser(usernameInput, passwordInput);
         if(isValidUser) {
-            navigate('/resources')
+            navigate('/resourceUser')
         } else {
             const msgContainer = document.getElementById('msg-container');
             msgContainer.style.color = 'red';
@@ -41,16 +41,20 @@ function Login(props) {
                                             </div>
                                             <form>
                                                 <div className="form-group">
-                                                    <label>Username</label>
-                                                    <input className="form-control form-control-lg" type="text" name="usernameInput" value={usernameInput} placeholder="Enter username" onChange={e => setUsernameInput(e.target.value)} />
+                                                    <input className="form-control form-control-lg" type="text" name="usernameInput" value={usernameInput} placeholder="Username" onChange={e => setUsernameInput(e.target.value)} />
                                                 </div><br/>
                                                 <div className="form-group">
-                                                    <label>Password</label>
-                                                    <input className="form-control form-control-lg" type="password" name="passwordInput" value={passwordInput} placeholder="Enter password" onChange={e => setPasswordInput(e.target.value)} />
+                                                    <input className="form-control form-control-lg" type="password" name="passwordInput" value={passwordInput} placeholder="Password" onChange={e => setPasswordInput(e.target.value)} />
                                                 </div>
                                                 <div className="text-center mt-3">
                                                     <span onClick={() => {handleLogin(usernameInput, passwordInput)}} className="btn btn-lg btn-success">Log In</span><br/><br/>
-                                                    <p>New user? <a href="signup-guest.html">Create an account</a></p>
+                                                    <p>New user? 
+                                                        <span>
+                                                            <Link to="/signupGuest" className="nav-link" aria-current="page">
+                                                                Create an account
+                                                            </Link>
+                                                        </span>
+                                                    </p>
                                                 </div>
                                             </form>
                                         </div>
@@ -62,7 +66,7 @@ function Login(props) {
                     </div>
                 </div>
             </main>
-            <Footer />
+            <FooterGuest />
         </div>
     )
 }
@@ -75,4 +79,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps, { validateUser })(Login);
+export default connect(mapStateToProps, { validateUser })(LoginGuest);
