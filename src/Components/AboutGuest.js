@@ -1,11 +1,11 @@
 import React from 'react'; 
-import Nav from './Nav';
-import Footer from './Footer';
+import NavGuest from './NavGuest';
+import FooterGuest from './FooterGuest';
 
 function AboutGuest(props) {
   return (
     <div>
-      <Nav />
+      <NavGuest />
       <main>
       <br/>
       <div className="container">
@@ -16,6 +16,7 @@ function AboutGuest(props) {
         <p>
           The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
         </p>
+        {/* Not sure if this href link needs to be changed; please delete this comment if you update it or confirm no changes need to be made. */}
         <p>
           This website is the result of a hackathon event organized by <a href="https://girldevelopit.com/">Girl Develop It</a>. Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.
         </p>
@@ -94,7 +95,7 @@ function AboutGuest(props) {
         </div>       
       </div>
     </main>
-    <Footer />
+    <FooterGuest />
     </div>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'; 
-import Nav from './Nav';
-import Footer from './Footer';
+import NavUser from './NavUser';
+import FooterUser from './FooterUser';
 
 function AboutUser(props) {
   return (
     <div>
-      <Nav />
+      <NavUser />
       <main>
       <br/>
       <div className="container">
@@ -94,7 +94,7 @@ function AboutUser(props) {
         </div>       
       </div>
     </main>
-    <Footer />
+    <FooterUser />
     </div>
   )
 }
