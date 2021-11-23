@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { validateSignup } from '../Redux/Actions/validateSignup';
-import NavGuest from './NavGuest';
-import FooterGuest from './FooterGuest';
+import Nav from './Nav';
+import Footer from './Footer';
 import '../html-css/css/signup-guest.css'
 
-function SignupGuest(props) {
+function Signup(props) {
     const navigate = useNavigate();
     const [firstNameInput, setFirstNameInput] = useState('');
     const [lastNameInput, setLastNameInput] = useState('');
@@ -20,7 +20,7 @@ function SignupGuest(props) {
     const handleSignup = (firstNameInput, lastNameInput, emailInput, newPasswordInput, cityInput, stateInput, pictureInput, agreementInput) => {
         const isValidSignup = props.validateSignup(firstNameInput, lastNameInput, emailInput, newPasswordInput, cityInput, stateInput, pictureInput, agreementInput);
         if(isValidSignup) {
-            navigate('/loginGuest')
+            navigate('/login')
         } else {
             const msgContainer = document.getElementById('msg-container');
             msgContainer.style.color = 'red';
@@ -29,7 +29,7 @@ function SignupGuest(props) {
     }
   return (
     <div>
-      <NavGuest />
+      <Nav />
       <main className="main" role="main">
     <div className="bg-white">
       <div className="col-md-6 offset-md-3">
@@ -77,7 +77,7 @@ function SignupGuest(props) {
     </div>
     
   </main>
-    <FooterGuest />
+    <Footer />
     </div>
   )
 }
@@ -98,4 +98,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps, { validateSignup })(SignupGuest);
+export default connect(mapStateToProps, { validateSignup })(Signup);

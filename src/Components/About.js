@@ -1,6 +1,7 @@
 import React from 'react'; 
 import Nav from './Nav';
 import Footer from './Footer';
+import '../html-css/css/about.css'
 
 function About(props) {
   return (
@@ -16,6 +17,7 @@ function About(props) {
         <p>
           The Cultivate Community project aims to aid as a bridge to reduce interaction between individuals in crisis and law enforcement. It can provide an alternate response model that utilizes both personal care webs and community directed resources. These resources allow those in crisis to have one less impediment to seeking vital care. Future features will include those requiring the assistance of violence interrupters, immigration defense teams, and for individuals who feel as if they are in an unsafe situation.
         </p>
+        {/* Not sure if this href link needs to be changed; please delete this comment if you update it or confirm no changes need to be made. */}
         <p>
           This website is the result of a hackathon event organized by <a href="https://girldevelopit.com/">Girl Develop It</a>. Girl Develop It is a nonprofit organization that provides affordable programs for adult women and non-binary individuals to learn web and software developing in a judgement free environment.
         </p>
@@ -32,7 +34,7 @@ function About(props) {
                 <div className="card-body">
                   <h5 className="card-title">Jillian Sechrest</h5>
                   <p className="card-text">Back-end Web Developer</p>
-                  <a href="https://github.com/Sechrest-J" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/bewaterwsnc" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -42,7 +44,7 @@ function About(props) {
                 <div className="card-body">
                   <h5 className="card-title">Lulu Cao</h5>
                   <p className="card-text">Front-end Web Developer</p>
-                  <a href="https://github.com/lulu-cao" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/lulu-cao" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -52,7 +54,7 @@ function About(props) {
                 <div className="card-body">
                   <h5 className="card-title">Katrina Behnken</h5>
                   <p className="card-text">Back-end Web Developer</p>
-                  <a href="https://github.com/kbehnken" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/kbehnken" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -66,7 +68,7 @@ function About(props) {
                 <div className="card-body">
                   <h5 className="card-title">Tracey Hebert</h5>
                   <p className="card-text">Front-end Web Developer</p>
-                  <a href="https://github.com/traceyhebert9" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/traceyhebert9" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
@@ -76,22 +78,46 @@ function About(props) {
                 <div className="card-body">
                   <h5 className="card-title">Alejandra P. Hernandez</h5>
                   <p className="card-text">Content Manager</p>
-                  <a href="https://github.com/alepehernandez" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/alepehernandez" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images//placeholder.png"} className="card-img-top custom-img" alt="Anja Wiesner"/>
+                <img src={process.env.PUBLIC_URL + "/images/anja1.jpg"} className="card-img-top custom-img" alt="Anja Wiesner"/>
                 <div className="card-body">
                   <h5 className="card-title">Anja Wiesner</h5>
                   <p className="card-text">Content Manager</p>
-                  <a href="https://github.com/awiesn" className="btn btn-primary">GitHub Profile</a>
+                  <a href="https://github.com/awiesn" className="btn btn-success">GitHub Profile</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>       
+        </div> 
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Dooz's Photo"/>
+                <div className="card-body">
+                  <h5 className="card-title">Dooz Zher</h5>
+                  <p className="card-text">Content Manager</p>
+                  <a href="https://github.com/doozher" className="btn btn-success">GitHub Profile</a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+            
+              </div>
+            </div>
+            <div className="col">
+              <div className="card" style={{width:"18rem"}}>
+              
+              </div>
+            </div>
+          </div>
+        </div>           
       </div>
     </main>
     <Footer />

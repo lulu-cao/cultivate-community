@@ -3,18 +3,19 @@ import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import ManageCareTeam from './ManageCareTeam';
 import Footer from './Footer';
+import '../html-css/css/resource.css'
 
-function Resources(props) {
+function Resource(props) {
     return (
         <div>
             <Nav />
             <div className="container"><br/>
-                <h3>Alternate Alert Response</h3>
+                <h3>Alert Response</h3>
                 <p>Mental Health resources and emergency response are lacking and often involve municipal law enforcement. This has led to escalated situations where individuals in crisis were severely injured or killed. Many individuals thus avoid seeking assistance/help due to the fear of law enforcement involvement. 
                 Cultivate Community is a website that provides an alternate response model for individuals in mental health crisis.</p>
                 {!props.isLoggedIn ?
                     (
-                        <p>Please <Link to="/login"> log in </Link> to view or manage or Care Team members.</p>
+                        <p>Please <Link to="/login"> log in </Link> to send an alert to Care Team members.</p>
                     ):
                     (
                         <div>
@@ -25,7 +26,7 @@ function Resources(props) {
                 <h3>Care Teams</h3>
                 {!props.isLoggedIn ?
                     (
-                        <p>Please <Link to="/login"> log in </Link> to view or manage or Care Team members.</p>
+                        <p>Please <Link to="/login"> log in </Link> to view or manage Care Team members.</p>
                     ):
                     (
                         <ManageCareTeam />
@@ -139,4 +140,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps)(Resources);
+export default connect(mapStateToProps)(Resource);

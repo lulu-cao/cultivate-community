@@ -1,8 +1,59 @@
 import React from 'react'; 
+import { Link } from 'react-router-dom';
 import Nav from './Nav';
 import Footer from './Footer'; 
+import '../html-css/css/home-guest.css'
 
 function Home() {
+
+      return (
+
+<div>
+
+    <Nav />
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <main>
+      <img src="https://everydaypower.com/wp-content/uploads/2019/05/110-Beautiful-Happy-Quotes-About-Life-to-Lift-Your-Mood-1000x600.jpg" alt="Hero Picture" id="profilePic"/>
+      <br/>
+      <br/>
+      <h1>Cultivate Community</h1>
+      <p className="fs-5 col-md-8">As mental health resources and responses are lacking for many marginalized communities, this web application provides useful tools and resources for people who are seeking mental health resources.</p>
+
+      <div className="mb-5">
+        <button className="btn btn-success btn-lg px-4"><Link to="/about">Learn More</Link></button>
+      </div>
+
+      <div className="row g-5">
+        <div className="col-md-6">
+          <h2>Mental Health is A Priority</h2>
+          <p>Gen Zs and millennials ranked their mental health as their first or second priority in life, with only physical health ranking higher on the list of priorities.</p>
+          
+          <div className="mb-5">
+            <button className="btn btn-success btn-lg px-4"><Link to="/resource">Resources</Link></button>
+          </div>
+        </div>
+
+        <div className="col-md-6">
+          <h2> CC Resources</h2>
+          <p>Frequently Used Resources</p>
+          <ul className="icon-list">
+            <li><Link to="/resource">Alternate Alert Response</Link></li>
+            <li><Link to="/resource">General Resources</Link></li>
+            <li><Link to="/resource">Care Teams</Link></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+<Footer />
+</div>
+)
+}
+
+export default Home;
+
+
+
 
     // const sendAlert = () => {
     //    Email.send({
@@ -17,59 +68,10 @@ function Home() {
     //     }).then(message => alert("Alert Sent Successfully"))
     // }
 
-
-      return (
-
-//This is the area where you paste your HTML codes
-<div>
-
 {/* <script src="https://smtpjs.com/v3/smtp.js"></script>
     <form method="post">
         <input type="button" value="SEND CRISIS ALERT" onClick={()=>{sendAlert()}}/>
         </form> */}
 
-        <Nav />
-        <main className="main" role="main">
-    <div className="bg-white">
-      <div className="container-fluid p-0">
-        <div className="row no-gutters vh-100">
-          <div className="col-12 col-sm-6 order-sm-2 bg-white d-flex justify-content-center align-items-center bg-overlay-teal">
-            <img src="_images/cover.jpg" className="img-fluid img-cover" alt="Cultivate Community" />
-          </div>
-          <div className="col-12 col-sm-6 order-sm-1 bg-light d-flex position-relative justify-content-center align-items-center">
-            <div className="p-3 p-md-4 p-lg-8 w-100">
-              <div className="card">
-                <div className="card-body">
-                  <h2 className="display-4 mb-2">Welcome!</h2>    
-                  <div className="m-sm-4">
-                    <form>
-                      <div className="form-group">
-                        <label>Username</label>
-                        <input className="form-control form-control-lg" type="text" name="username" placeholder="Enter your username" />
-                      </div>
-                      <div className="form-group">
-                        <label>Password</label>
-                        <input className="form-control form-control-lg" type="password" name="password" placeholder="Enter password" />
-                      </div>
-                      <div className="text-center mt-3">
-                        <a href="myaccount.html" className="btn btn-lg btn-primary">Log In</a>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-          
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-<Footer />
-</div>
-)
-
 // const Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
-    }
-export default Home;
+    
