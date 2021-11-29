@@ -13,7 +13,7 @@ export default (
     <Routes>
         {/* <PrivateRoute exact path='/' component={Home} /> */}
         {/* <PrivateRoutes path='/manage-care-team' element={<ManageCareTeam />} /> */}
-        <Route path='/home' element={<Home />} /> 
+        <Route path='/' element={<Home />} /> 
         <Route path='/about' element={<About />} />
         <Route path='/resources' element={<Resources />} />
         <Route path='/login' element={<Login />} />
