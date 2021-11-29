@@ -98,7 +98,7 @@ function About(props) {
           <div className="row">
             <div className="col">
               <div className="card" style={{width:"18rem"}}>
-                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Dooz's Photo"/>
+                <img src={process.env.PUBLIC_URL + "/images/placeholder.png"} className="card-img-top custom-img" alt="Dooz"/>
                 <div className="card-body">
                   <h5 className="card-title">Dooz Zher</h5>
                   <p className="card-text">Content Manager</p>
