@@ -51,7 +51,7 @@ function Login(props) {
                                                     <span onClick={() => {handleLogin(usernameInput, passwordInput)}} className="btn btn-lg btn-success">Log In</span><br/><br/>
                                                     <p>New user? 
                                                         <span>
-                                                            <Link to="/signup" className="nav-link" aria-current="page">
+                                                            <Link to="/sign-up" className="nav-link" aria-current="page">
                                                                 Create an account
                                                             </Link>
                                                         </span>
