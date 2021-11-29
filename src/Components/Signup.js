@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { validateSignup } from '../Redux/Actions/validateSignup';
+// import { connect } from 'react-redux';
+// import { validateSignup } from '../Redux/Actions/validateSignup';
 import Nav from './Nav';
 import Footer from './Footer';
 import '../html-css/css/signup-guest.css'
 
-function Signup(props) {
+function SignUp(props) {
     const navigate = useNavigate();
     const [firstNameInput, setFirstNameInput] = useState('');
     const [lastNameInput, setLastNameInput] = useState('');
@@ -16,7 +16,6 @@ function Signup(props) {
     const [stateInput, setStateInput] = useState('');
     const [pictureInput, setPictureInput] = useState('');
     const [agreementInput, setAgreementInput] = useState('');
-    // A new file needs to be written at ../Redux/Actions/validateSignup
     const handleSignup = (firstNameInput, lastNameInput, emailInput, newPasswordInput, cityInput, stateInput, pictureInput, agreementInput) => {
         const isValidSignup = props.validateSignup(firstNameInput, lastNameInput, emailInput, newPasswordInput, cityInput, stateInput, pictureInput, agreementInput);
         if(isValidSignup) {
@@ -83,19 +82,20 @@ function Signup(props) {
 }
 
 
-function mapStateToProps(reduxState) {
-    return {
-        firstNameInput: reduxState.user.firstname,
-        lastNameInput: reduxState.user.lastname,
-        emailInput: reduxState.user.email,
-        newPasswordInput: reduxState.user.newpassword,
-        cityInput: reduxState.user.city,
-        stateInput: reduxState.user.state,
-        pictureInput: reduxState.user.picture,
-        agreementInput: reduxState.user.agreement,
-        username: reduxState.user.username,
-        password: reduxState.user.password,
-    }
-}
+// function mapStateToProps(reduxState) {
+//     return {
+//         firstNameInput: reduxState.user.firstname,
+//         lastNameInput: reduxState.user.lastname,
+//         emailInput: reduxState.user.email,
+//         newPasswordInput: reduxState.user.newpassword,
+//         cityInput: reduxState.user.city,
+//         stateInput: reduxState.user.state,
+//         pictureInput: reduxState.user.picture,
+//         agreementInput: reduxState.user.agreement,
+//         username: reduxState.user.username,
+//         password: reduxState.user.password,
+//     }
+// }
 
-export default connect(mapStateToProps, { validateSignup })(Signup);
+// export default connect(mapStateToProps)(Signup);
+export default SignUp;
