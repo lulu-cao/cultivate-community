@@ -1,9 +1,11 @@
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Nav from './Nav';
+import CareTeamAlert from './CareTeamAlert';
 import ManageCareTeam from './ManageCareTeam';
 import Footer from './Footer';
 import '../html-css/css/resource.css'
+
 
 function Resource(props) {
     return (
@@ -18,9 +20,7 @@ function Resource(props) {
                         <p>Please <Link to="/login"> log in </Link> to send an alert to Care Team members.</p>
                     ):
                     (
-                        <div>
-                            <button type="button" className="btn btn-warning">Send Alert to All Care Team Members</button><br/><br/><br/>
-                        </div>
+                        <CareTeamAlert />
                     )
                 }
                 <h3>Care Teams</h3>
