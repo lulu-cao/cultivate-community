@@ -9,7 +9,18 @@ function ManageCareTeam(props) {
     })
     return (
         <div>
-            {mappedCareMembers}
+            {!props.careMembers ?
+                (
+                    <p>
+                        Your Care Team contact list is empty. Click below to set up your Care Team now.
+                    </p>
+                ):
+                (
+                    <div>
+                        {mappedCareMembers}
+                    </div>
+                )
+            }
             <AddCareMember />
         </div>
     )
