@@ -21,10 +21,9 @@ function LoginNav(props) {
                 <Link to="/about" className="nav-link" aria-current="page">
                   About
                 </Link>
-                {/* <a className="nav-link" aria-current="page" href="./aboutpage.html">About</a> */}
               </li>
               <li className="nav-item">
-                <Link to="/resource" className="nav-link" aria-current="page">
+                <Link to="/resources" className="nav-link" aria-current="page">
                   Resources
                 </Link>
               </li>

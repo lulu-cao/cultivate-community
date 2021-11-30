@@ -7,7 +7,7 @@ import Footer from './Footer';
 import '../html-css/css/resource.css'
 
 
-function Resource(props) {
+function Resources(props) {
     return (
         <div>
             <Nav />
@@ -140,4 +140,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps)(Resource);
+export default connect(mapStateToProps)(Resources);

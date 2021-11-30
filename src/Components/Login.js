@@ -13,7 +13,7 @@ function Login(props) {
     const handleLogin = (usernameInput, passwordInput) => {
         const isValidUser = props.validateUser(usernameInput, passwordInput);
         if(isValidUser) {
-            navigate('/resource')
+            navigate('/resources')
         } else {
             const msgContainer = document.getElementById('msg-container');
             msgContainer.style.color = 'red';
