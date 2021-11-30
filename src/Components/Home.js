@@ -23,16 +23,16 @@ function Home() {
               <h2>Mental Health is A Priority</h2>
               <p>Gen Zs and millennials ranked their mental health as their first or second priority in life, with only physical health ranking higher on the list of priorities.</p>
               <div className="mb-5">
-                <button className="btn btn-success btn-lg px-4"><Link to="/resource">Resources</Link></button>
+                <button className="btn btn-success btn-lg px-4"><Link to="/resources">Resources</Link></button>
               </div>
             </div>
             <div className="col-md-6">
               <h2> CC Resources</h2>
               <p>Frequently Used Resources</p>
               <ul className="icon-list">
-                <li><Link to="/resource">Alternate Alert Response</Link></li>
-                <li><Link to="/resource">General Resources</Link></li>
-                <li><Link to="/resource">Care Teams</Link></li>
+                <li><Link to="/resources">Alternate Alert Response</Link></li>
+                <li><Link to="/resources">General Resources</Link></li>
+                <li><Link to="/resources">Care Teams</Link></li>
               </ul>
             </div>
           </div>

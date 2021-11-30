@@ -28,7 +28,7 @@ function Nav(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/resource" className="nav-link" aria-current="page">
+              <Link to="/resources" className="nav-link" aria-current="page">
                 Resources
               </Link>
             </li>
