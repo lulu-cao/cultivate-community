@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
       <Nav />
-        <div class="col-lg-8 mx-auto p-3 py-md-5">
+        <div className="col-lg-8 mx-auto p-3 py-md-5">
           <main>
           <img src="https://everydaypower.com/wp-content/uploads/2019/05/110-Beautiful-Happy-Quotes-About-Life-to-Lift-Your-Mood-1000x600.jpg" alt="Hero" id="profilePic"/>
           <br/>
