@@ -17,7 +17,7 @@ function CareTeamAlert(props) {
         }
         if(!navigator.geolocation) {
             msgHolder.style.color = 'red';
-            msgHolder.innerHTML = 'Geolocation is not supported by your browser';
+            msgHolder.innerHTML = 'Geolocation is not supported by your browser.';
             return
         } else {
             return navigator.geolocation.getCurrentPosition(success, error);
