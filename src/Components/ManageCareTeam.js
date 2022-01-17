@@ -5,7 +5,7 @@ import CareMember from './CareMember';
 
 function ManageCareTeam(props) {
     const mappedCareMembers = props.careMembers.map((member) => {
-        return <CareMember member={member} />
+        return <CareMember key={member.smsAddress} member={member} />
     })
     return (
         <div>
