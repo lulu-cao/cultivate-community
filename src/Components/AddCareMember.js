@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch } from 'react-redux';
+import { addCareMemberData } from '../Redux/Actions/careMemberActions';
 
 function AddCareMember(props) {
+    const dispatch = useDispatch();
     const [showAddCareMember, setShowAddCareMember] = useState(false);
     const [firstNameInput, setFirstNameInput] = useState('');
     const [lastNameInput, setLastNameInput] = useState('');
@@ -10,9 +12,14 @@ function AddCareMember(props) {
     const toggleAddCareMember = () => {
         return setShowAddCareMember(!showAddCareMember);
     };
-    const handleAddCareMember = (firstNameInput, lastNameInput, smsAddressInput, phoneInput) => {
-        props.addCareMember(firstNameInput, lastNameInput, smsAddressInput);
-            
+    const handleAddCareMember = function() {
+        dispatch(addCareMemberData())
+        .then(() => {
+            alert(`You successfully added ${props.firstName} ${props.lastName} to your Care Team.`)
+        })
+        .catch(err => {
+            console.log(err)
+        })
     }
     return (
         <div>
@@ -67,4 +74,4 @@ function mapStateToProps(reduxState) {
     }
 }
 
-export default connect(mapStateToProps)(AddCareMember);
+export default connect(mapStateToProps, { addCareMemberData })(AddCareMember);
